@@ -122,7 +122,7 @@ public class StockWatcher implements EntryPoint {
 
 		};
 
-
+		refreshTimer.scheduleRepeating(REFRESH_INTERVAL);
 
 		// Listen for mouse events on the Add button.
 		addStockButton.addClickHandler(new ClickHandler() {
